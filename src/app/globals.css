@@ -74,3 +74,23 @@
   text-decoration: underline;
   text-decoration-color: #4A5568; /* Customize the color if needed */
 }
+
+/* Estilos para el footer */
+.footer {
+  background-color: #282c34; /* Color de fondo que coincida con el navbar */
+  color: white; /* Color del texto */
+  padding: 20px 0; /* Espaciado superior e inferior */
+  text-align: center; /* Centrar texto */
+}
+
+.footer .icon-github,
+.footer .icon-linkedin,
+.footer .icon-stackoverflow {
+  transition: transform 0.2s; /* Transición suave para hover */
+}
+
+.footer .icon-github:hover,
+.footer .icon-linkedin:hover,
+.footer .icon-stackoverflow:hover {
+  transform: scale(1.1); /* Aumentar el tamaño al pasar el mouse */
+}
