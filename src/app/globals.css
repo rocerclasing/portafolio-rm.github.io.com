@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footer {
+ 
+  color: #fff;
+  text-align: center; /* Centramos el texto */
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  top:20px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto; /* Centrar el contenido horizontalmente */
+  padding: 0 20px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Usamos flexbox para alinear los elementos */
+  justify-content: center; /* Centra los elementos en el eje horizontal */
+  margin-top: 10px; /* Espacio arriba de la lista de enlaces */
+}
+
+.social-links li {
+  margin: 0 10px; /* Espacio entre los enlaces */
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+/*Home*/
+.tech-stack {
+  padding: 2rem; /* Espaciado alrededor de la sección */
+  background-color: #f8f9fa; /* Color de fondo suave */
+  border-radius: 0.5rem; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.tech-stack h2 {
+  font-size: 1.5rem; /* Tamaño del texto del encabezado */
+  margin-bottom: 1rem; /* Espaciado inferior */
+  color: #333; /* Color del texto */
+}
+
+.tech-stack ul {
+  list-style: none; /* Quita los puntos de la lista */
+  padding: 0; /* Quita el padding predeterminado */
+}
+
+.tech-stack li {
+  font-size: 1rem; /* Tamaño del texto de los elementos de la lista */
+  margin: 0.5rem 0; /* Espaciado vertical entre elementos de la lista */
+  color: #555; /* Color del texto de los elementos de la lista */
+  transition: color 0.3s; /* Transición suave para el hover */
+}
+
+.tech-stack li:hover {
+  color: #007bff; /* Color del texto al pasar el mouse */
+  cursor: pointer;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: #4A5568; /* Customize the color if needed */
+}
