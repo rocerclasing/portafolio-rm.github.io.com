@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <footer className="footer">
         <div className="footer-content flex flex-col items-center">
-          <p>&copy; 2024 Robert Sebastián Muñoz Clasing. Todos los derechos reservados.</p>
+          <p>© 2024 Robert Sebastián Muñoz Clasing. All rights reserved.</p>
           <div className="flex items-center mt-8"> {/* Asegura que los íconos estén en la misma fila */}
             <a 
               href="https://github.com/rocerclasing?tab=repositories" 
