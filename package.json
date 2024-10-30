@@ -5,12 +5,13 @@
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
-       "export": "next build && next export",
+    "export": "next build && next export",
     "start": "next start",
-     "deploy": "vercel --prod",
+    "deploy": "vercel --prod",
     "lint": "next lint"
   },
   "dependencies": {
+    "emailjs-com": "^3.2.0",
     "next": "15.0.0",
     "nodemailer": "^6.9.15",
     "react": "19.0.0-rc-65a56d0e-20241020",
