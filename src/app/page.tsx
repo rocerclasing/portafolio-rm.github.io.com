@@ -4,7 +4,13 @@ import { FaHtml5 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
 import { RiNextjsLine } from "react-icons/ri";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Home",
+    description: "Explora nuestra plataforma y descubre soluciones innovadoras en tecnología web. Creado con Next.js para ofrecer una experiencia rápida, segura y completamente optimizada.",
+  };
+  
 const Home = () => {
     return (
         <>

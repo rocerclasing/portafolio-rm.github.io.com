@@ -1,5 +1,13 @@
 import CardProject from '@/components/CardProject';
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "Explore a curated selection of projects showcasing a range of skills in front-end and back-end development, from responsive design to API integrations and cloud solutions. Each project demonstrates a commitment to clean code, functionality, and user experience.",
+};
+
+
 const projects = [
   { id: 1, title: "Portfolio", description: "Showcases my personal and professional projects.", githubLink: "https://github.com/rocerclasing/portafolio-rm.github.io.com.git" },
   { id: 2, title: "Blog", description: "An article publishing platform with pagination, retrieving data from the server.", githubLink: "https://github.com/rocerclasing/blog-basic-ts-next-react-js" },

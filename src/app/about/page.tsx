@@ -1,5 +1,11 @@
 
 import Link from 'next/link';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About - Robert Sebastián Muñoz Clasing",
+  description: "Conoce más sobre Robert Sebastián Muñoz Clasing, un Desarrollador Full Stack apasionado por crear sitios web limpios, responsivos y amigables para el usuario. Explora su trayectoria profesional, habilidades técnicas y proyectos destacados.",
+};
 
 const Page = () => {
   return (
