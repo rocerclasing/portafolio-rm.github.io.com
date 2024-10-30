@@ -4,14 +4,14 @@
 
 /* Footer */
 .footer {
-  @apply bg-gray-800 text-white text-center py-6; /* Aumenta el padding aquí */
+  @apply bg-gray-800 text-white text-center py-6;
   position: relative;
   bottom: 0;
   width: 100%;
 }
 
 .footer-content {
-  @apply max-w-5xl mx-auto px-4;
+  @apply max-w-5xl mx-auto px-4 lg:px-8;
 }
 
 .social-links {
@@ -26,30 +26,31 @@
   @apply text-white hover:underline;
 }
 
-/* Home */
+/* Tech Stack Section */
 .tech-stack {
-  @apply p-20 bg-gray-100 rounded-lg shadow-md;
+  @apply p-6 md:p-10 lg:p-20 bg-gray-100 rounded-lg shadow-md;
 }
 
 .tech-stack h2 {
-  @apply text-xl md:text-2xl mb-4 text-gray-800;
+  @apply text-xl md:text-2xl lg:text-3xl font-semibold mb-4 text-gray-800 text-center;
 }
 
 .tech-stack ul {
-  @apply list-none p-0;
+  @apply list-none p-0 text-center; /* Centraliza la lista */
 }
 
 .tech-stack li {
-  @apply text-base md:text-lg mb-2 text-gray-600 transition-colors duration-300;
+  @apply text-sm md:text-base lg:text-lg mb-2 text-gray-600 transition-colors duration-300;
 }
 
 .tech-stack li:hover {
   @apply text-blue-500 cursor-pointer;
 }
 
+/* Underline customization */
 .underline {
   text-decoration: underline;
-  text-decoration-color: #4A5568; /* Customize the color if needed */
+  text-decoration-color: #4A5568;
 }
 
 /* Footer icons with hover effect */
@@ -65,17 +66,23 @@
   @apply transform scale-110;
 }
 
-/*Icono github card project*/
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-5%);
+/* Responsive improvements for smaller devices */
+@media (max-width: 640px) {
+  /* Footer adjustments */
+  .footer-content {
+    @apply px-2;
   }
-  50% {
-    transform: translateY(5%);
-  }
-}
 
-.bounce-animation {
-  animation: bounce 1s infinite;
+  /* Tech Stack adjustments */
+  .tech-stack {
+    @apply p-4;
+  }
+
+  .tech-stack h2 {
+    @apply text-lg;
+  }
+
+  .tech-stack li {
+    @apply text-sm;
+  }
 }
