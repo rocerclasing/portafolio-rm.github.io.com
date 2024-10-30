@@ -67,11 +67,37 @@
 }
 
 /* Responsive improvements for smaller devices */
-@media (max-width: 640px) {
+@media (max-width: 640px ) {
+  #mobile-menu {
+    @apply block;
+  }
   /* Footer adjustments */
   .footer-content {
     @apply px-2;
   }
+
+  /*mobile-menu*/
+  /* Para pantallas de hasta 568px */
+@media (max-width: 568px) {
+  #mobile-menu {
+    @apply block;
+    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+    padding: 1rem; /* Añade espacio para que el contenido sea más legible */
+    font-size: 1rem; /* Tamaño de fuente adecuado para pantallas pequeñas */
+  }
+}
+
+/* Para pantallas de hasta 982px */
+@media (max-width: 982px) {
+  #mobile-menu {
+    @apply block;
+    width: 100%; /* Mantén el ancho completo */
+    padding: 1.5rem; /* Añade un poco más de espacio */
+    font-size: 1.2rem; /* Tamaño de fuente más grande para mejor lectura */
+  }
+}
+
+
 
   /* Tech Stack adjustments */
   .tech-stack {

@@ -6,7 +6,7 @@ import { FaStackOverflow } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className='bg-gray-800 p-4 shadow-md'>
+    <nav className='bg-gray-800 p-4 shadow-md' id="mobile-menu">
       <div className='container mx-auto flex items-center justify-between'>
         <div className='flex flex-grow justify-center space-x-8'>
           <Link href="/" className='text-white hover:text-gray-300 transition duration-200'>Home</Link>
