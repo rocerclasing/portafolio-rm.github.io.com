@@ -1,3 +1,4 @@
+import ButtonCV from '@/components/ButtonCV';
 import Link from 'next/link';
 
 const Page = () => {
@@ -22,6 +23,7 @@ const Page = () => {
             <Link href="/projects" className="inline-block bg-blue-600 text-white py-3 px-8 rounded-lg shadow-lg hover:bg-blue-500 transition duration-300">
               View My Work
             </Link>
+              <ButtonCV/>
           </div>
         </div>
       </div>
