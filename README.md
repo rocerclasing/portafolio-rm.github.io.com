@@ -9,4 +9,4 @@ Ahora el usuario es dinamico funciona con cualquier correo de servicio gmail.
 
 En la  parte de proyectos  
 
-Y he linkeado en la cardproject los iconos de github a cada de sus repositorio para compartir el codigo del proyecto 
+Y he linkeado en la cardproject los iconos de github a cada de sus repositorio para compartir el codigo de los proyectos 
