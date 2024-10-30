@@ -32,15 +32,15 @@ const CardProject = ({ title, description, index, githubLink }: Props) => {
       </Link>
       <div className="flex justify-center mb-2 space-x-4 text-blue-500">
         <div className="flex flex-col items-center" aria-label="HTML5">
-          <FaHtml5 className="text-3xl" title="HTML5" />
+          <FaHtml5 className="text-3xl transition-colors duration-200 hover:text-red-500" title="HTML5" />
           <span className="text-sm">HTML5</span>
         </div>
         <div className="flex flex-col items-center" aria-label="React">
-          <FaReact className="text-3xl" title="React" />
+          <FaReact className="text-3xl transition-colors duration-200 hover:text-blue-400" title="React" />
           <span className="text-sm">React</span>
         </div>
         <div className="flex flex-col items-center" aria-label="JavaScript">
-          <FaJsSquare className="text-3xl" title="JavaScript" />
+          <FaJsSquare className="text-3xl transition-colors duration-200 hover:text-yellow-500" title="JavaScript" />
           <span className="text-sm">JS</span>
         </div>
         <div className="flex flex-col items-center" aria-label="GitHub">
