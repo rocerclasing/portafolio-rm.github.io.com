@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navbar */
+.navbar {
+  @apply bg-gray-800 text-white py-4 fixed top-0 w-full h-[157px];
+}
+
+/* Footer */
+.footer {
+  @apply bg-gray-800 text-white text-center py-4 fixed bottom-0 w-full h-[157px];
+}
+
+.footer-content {
+  @apply max-w-[1048px] mx-auto px-4 lg:px-8;
+}
+
+.social-links {
+  @apply list-none flex justify-center mt-3;
+}
+
+.social-links li {
+  @apply mx-2;
+}
+
+.social-links a {
+  @apply text-white hover:underline;
+}
+
+/* Iconos del footer adaptables */
+.footer .icon {
+  @apply w-6 h-6 transition-transform duration-200;
+}
+
+.footer .icon:hover {
+  @apply transform scale-110;
+}
+
+/* Sección de Tech Stack */
+.tech-stack {
+  @apply p-6 md:p-10 lg:p-20 bg-gray-100 rounded-lg shadow-md;
+}
+
+.tech-stack h2 {
+  @apply text-xl md:text-2xl lg:text-3xl font-semibold mb-4 text-gray-800 text-center;
+}
+
+.tech-stack ul {
+  @apply list-none p-0 text-center;
+}
+
+.tech-stack li {
+  @apply text-sm md:text-base lg:text-lg mb-2 text-gray-600 transition-colors duration-300;
+}
+
+.tech-stack li:hover {
+  @apply text-blue-500 cursor-pointer;
+}
+
+/* Responsividad y ajustes para pantallas pequeñas */
+@media (max-width: 640px) {
+  .footer-content {
+    @apply px-2;
+  }
+  
+  .tech-stack {
+    @apply p-4;
+  }
+
+  .tech-stack h2 {
+    @apply text-lg;
+  }
+
+  .tech-stack li {
+    @apply text-sm;
+  }
+}
+
+/* Ajuste del contenedor y el tamaño de íconos */
+@media (max-width: 586px) {
+  .navbar, .footer {
+    @apply px-4;
+  }
+}
+
+@media (max-width: 982px) {
+  .navbar, .footer {
+    @apply px-6;
+  }
+}
