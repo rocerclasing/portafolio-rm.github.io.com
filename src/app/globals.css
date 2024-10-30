@@ -2,16 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Navbar */
+.navbar {
+  @apply bg-gray-800 text-white py-4 fixed top-0 w-full h-[157px];
+}
+
 /* Footer */
 .footer {
-  @apply bg-gray-800 text-white text-center py-6;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  @apply bg-gray-800 text-white text-center py-4 fixed bottom-0 w-full h-[157px];
 }
 
 .footer-content {
-  @apply max-w-5xl mx-auto px-4 lg:px-8;
+  @apply max-w-[1048px] mx-auto px-4 lg:px-8;
 }
 
 .social-links {
@@ -26,7 +28,16 @@
   @apply text-white hover:underline;
 }
 
-/* Tech Stack Section */
+/* Iconos del footer adaptables */
+.footer .icon {
+  @apply w-6 h-6 transition-transform duration-200;
+}
+
+.footer .icon:hover {
+  @apply transform scale-110;
+}
+
+/* Sección de Tech Stack */
 .tech-stack {
   @apply p-6 md:p-10 lg:p-20 bg-gray-100 rounded-lg shadow-md;
 }
@@ -36,7 +47,7 @@
 }
 
 .tech-stack ul {
-  @apply list-none p-0 text-center; /* Centraliza la lista */
+  @apply list-none p-0 text-center;
 }
 
 .tech-stack li {
@@ -47,59 +58,12 @@
   @apply text-blue-500 cursor-pointer;
 }
 
-/* Underline customization */
-.underline {
-  text-decoration: underline;
-  text-decoration-color: #4A5568;
-}
-
-/* Footer icons with hover effect */
-.footer .icon-github,
-.footer .icon-linkedin,
-.footer .icon-stackoverflow {
-  @apply transition-transform duration-200;
-}
-
-.footer .icon-github:hover,
-.footer .icon-linkedin:hover,
-.footer .icon-stackoverflow:hover {
-  @apply transform scale-110;
-}
-
-/* Responsive improvements for smaller devices */
-@media (max-width: 640px ) {
-  #mobile-menu {
-    @apply block;
-  }
-  /* Footer adjustments */
+/* Responsividad y ajustes para pantallas pequeñas */
+@media (max-width: 640px) {
   .footer-content {
     @apply px-2;
   }
-
-  /*mobile-menu*/
-  /* Para pantallas de hasta 568px */
-@media (max-width: 586px) {
-  #mobile-menu {
-    @apply block;
-    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
-    padding: 1rem; /* Añade espacio para que el contenido sea más legible */
-    font-size: 1rem; /* Tamaño de fuente adecuado para pantallas pequeñas */
-  }
-}
-
-/* Para pantallas de hasta 982px */
-@media (max-width: 982px) {
-  #mobile-menu {
-    @apply block;
-    width: 100%; /* Mantén el ancho completo */
-    padding: 1.5rem; /* Añade un poco más de espacio */
-    font-size: 1.2rem; /* Tamaño de fuente más grande para mejor lectura */
-  }
-}
-
-
-
-  /* Tech Stack adjustments */
+  
   .tech-stack {
     @apply p-4;
   }
@@ -110,5 +74,18 @@
 
   .tech-stack li {
     @apply text-sm;
+  }
+}
+
+/* Ajuste del contenedor y el tamaño de íconos */
+@media (max-width: 586px) {
+  .navbar, .footer {
+    @apply px-4;
+  }
+}
+
+@media (max-width: 982px) {
+  .navbar, .footer {
+    @apply px-6;
   }
 }

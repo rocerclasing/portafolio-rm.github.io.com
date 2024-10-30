@@ -9,8 +9,8 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Home",
     description: "Explora nuestra plataforma y descubre soluciones innovadoras en tecnología web. Creado con Next.js para ofrecer una experiencia rápida, segura y completamente optimizada.",
-  };
-  
+};
+
 const Home = () => {
     return (
         <>
@@ -26,7 +26,7 @@ const Home = () => {
             </section>
 
             <section className="flex items-center justify-center mb-10">
-                <div className="tech-stack text-center">
+                <div>
                     <h2 className="text-2xl font-semibold mb-4">Stack Tecnológico</h2>
                     <ul className="list-disc list-inside">
                         <li className="flex items-center justify-center">
@@ -45,7 +45,7 @@ const Home = () => {
                             Node.js <FaNodeJs className="text-yellow-500 ml-2" style={{ color: '#68A063' }} />
                         </li>
                         <li className="flex items-center justify-center">
-                            Next.js <RiNextjsLine className="text-gray-700 ml-2 text-lg" /> {/* Cambié el color y el tamaño aquí */}
+                            Next.js <RiNextjsLine className="text-gray-700 ml-2 text-lg" />
                         </li>
                     </ul>
                 </div>
