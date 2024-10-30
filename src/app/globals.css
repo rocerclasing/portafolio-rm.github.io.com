@@ -64,3 +64,18 @@
 .footer .icon-stackoverflow:hover {
   @apply transform scale-110;
 }
+
+/*Icono github card project*/
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+}
+
+.bounce-animation {
+  animation: bounce 1s infinite;
+}

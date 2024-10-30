@@ -45,7 +45,7 @@ const CardProject = ({ title, description, index, githubLink }: Props) => {
         </div>
         <div className="flex flex-col items-center" aria-label="GitHub">
           <Link href={githubLink} target="_blank" rel="noopener noreferrer" aria-label={`View code on GitHub for ${title}`}>
-            <FaGithub className="text-3xl" title="GitHub" />
+            <FaGithub className="text-3xl transition-transform transform hover:scale-125 hover:text-gray-500" title="GitHub" />
           </Link>
           <span className="text-sm">GitHub</span>
         </div>
